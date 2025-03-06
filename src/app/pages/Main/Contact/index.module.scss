@@ -1,0 +1,76 @@
+.container {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  background-color: #e9e9e9;
+
+  .left_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    .title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .title_desc {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .right_wrap {
+
+    .contact_wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+
+      .contact_title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .contact_form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .form_wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+
+          .form_label {
+            font-size: 16px;
+            font-weight: 700;
+          }
+
+          .form_input {
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  /* ✅ 스마트폰 대응 (768px 이하) */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px;
+
+    .right_wrap {
+      grid-template-columns: 1fr; /* 세로 정렬 */
+      gap: 20px;
+    }
+  }
+}

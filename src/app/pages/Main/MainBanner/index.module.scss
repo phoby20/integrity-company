@@ -1,0 +1,38 @@
+.container {
+  position: relative;
+  top: 0px;
+
+  .banner_title {
+    position: absolute;
+    
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+
+    .request_button {
+      width: 200px;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+
+  /* ✅ 스마트폰 대응 (768px 이하) */
+  @media (max-width: 768px) {
+    .banner_title {
+      font-size: 1.1rem;
+
+      .request_button {
+        width: 150px;
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    
+  }
+}

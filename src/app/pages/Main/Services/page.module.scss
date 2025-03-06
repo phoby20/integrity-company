@@ -1,0 +1,61 @@
+.container {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  background-color: white;
+
+  .left_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .title_desc {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .right_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    .service_wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+
+      .service_title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+      }
+
+      .service_desc {
+        font-size: 16px;
+        font-weight: 400;
+        color: gray;
+      }
+    }
+  }
+
+  /* ✅ 스마트폰 대응 (768px 이하) */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px;
+
+    .right_wrap {
+      grid-template-columns: 1fr; /* 세로 정렬 */
+      gap: 20px;
+    }
+  }
+}
