@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  top: 0px;
+
+  .banner_title {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+}
