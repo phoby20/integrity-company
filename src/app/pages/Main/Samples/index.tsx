@@ -16,6 +16,8 @@ export default function Samples() {
         <p>Template</p>
         <div className={styles.desc}>
           <p>制作を依頼したいテンプレートを選んで問い合わせてください</p>
+          <p>* 紹介ページは1ページ増えるごとに5000円が追加されます</p>
+          <p>* 仕様により制作金額が増えることがあります</p>
         </div>
       </div>
 
@@ -23,19 +25,28 @@ export default function Samples() {
         <Link href="/sample/01" className={styles.template_item} target="_blank">
           <Image src={sample1} alt="sample1" />
           <div className={styles.overlay}></div>
-          <p className={styles.template_name}>01. 紹介サイト</p>
+          <div className={styles.template_name}>
+            <p>01. 紹介サイト</p>
+            <p>5,000円〜</p>
+          </div>
           <Button buttonName='詳細を見る' onClick={handleClickDetail} type='tertiary' />
         </Link>
         <Link href="https://www.heartter.com/" className={styles.template_item} target="_blank">
           <Image src={heartter} alt="sample2" />
           <div className={styles.overlay}></div>
-          <p className={styles.template_name}>02. SNS</p>
+          <div className={styles.template_name}>
+            <p>02. SNS</p>
+            <p>ご相談要</p>
+          </div>
           <Button buttonName='詳細を見る' onClick={handleClickDetail} type='tertiary' />
         </Link>
         <Link href="https://www.jmdp.or.jp/donor_judgment/" className={styles.template_item} target="_blank">
           <Image src={donorJudgment} alt="sample3" />
           <div className={styles.overlay}></div>
-          <p className={styles.template_name}>03. 検索システム</p>
+          <div className={styles.template_name}>
+            <p>03. 検索システム</p>
+            <p>100,000円〜</p>
+          </div>
           <Button buttonName='詳細を見る' onClick={handleClickDetail} type='tertiary' />
         </Link>
       </div>
