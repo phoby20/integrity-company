@@ -40,12 +40,11 @@ export default function Contact() {
           <p>Contact</p>
         </div>
         <div className={styles.title_desc}>
-          <h2>お問い合わせフォームからお気軽にお問い合わせください</h2>
+          <p>お問い合わせフォームから <br /> お気軽にお問い合わせください</p>
         </div>
       </div>
       <div className={styles.right_wrap}>
         <div className={styles.contact_wrap}>
-          <div className={styles.contact_title}>お問い合わせフォーム</div>
           <form className={styles.contact_form} onSubmit={(e) => e.preventDefault()}>
             <div className={styles.form_wrap}>
               <label className={styles.form_label} htmlFor="name">お名前</label>
