@@ -1,5 +1,5 @@
 'use client';
-import { ArrowUpToLine, Facebook, Instagram, Youtube } from 'lucide-react';
+import { ArrowUpToLine, CircleChevronRight, Facebook, Instagram, Youtube } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import hero1 from '@/public/imgs/sample/01/hero_1.jpeg';
@@ -421,11 +421,10 @@ export default function Home() {
                       お子様から大人まで楽しめるイベントですので、ぜひご参加ください。
                     </p>
                     <ul className="stuff">
-                      <li><i className="icon-heart2" />1.2K</li>
-                      <li><i className="icon-eye2" />2K</li>
                       <li>
-                        <a href="#">
-                          Read More<i className="icon-arrow-right22" />
+                        <a href="#" className={styles.read_more}>
+                          <p>Read More</p>
+                          <CircleChevronRight />
                         </a>
                       </li>
                     </ul>
@@ -443,11 +442,10 @@ export default function Home() {
                       お気軽にお立ち寄りください。
                     </p>
                     <ul className="stuff">
-                      <li><i className="icon-heart2" />1.2K</li>
-                      <li><i className="icon-eye2" />2K</li>
                       <li>
-                        <a href="#">
-                          Read More<i className="icon-arrow-right22" />
+                        <a href="#" className={styles.read_more}>
+                          <p>Read More</p>
+                          <CircleChevronRight />
                         </a>
                       </li>
                     </ul>
@@ -465,11 +463,10 @@ export default function Home() {
                       ぜひご参加ください。
                     </p>
                     <ul className="stuff">
-                      <li><i className="icon-heart2" />1.2K</li>
-                      <li><i className="icon-eye2" />2K</li>
                       <li>
-                        <a href="#">
-                          Read More<i className="icon-arrow-right22" />
+                        <a href="#" className={styles.read_more}>
+                          <p>Read More</p>
+                          <CircleChevronRight />
                         </a>
                       </li>
                     </ul>
