@@ -6,6 +6,7 @@ import Services from '@/src/app/pages/Main/Services';
 import Contact from '@/src/app/pages/Main/Contact';
 import Process from '@/src/app/pages/Main/Process';
 import Samples from '@/src/app/pages/Main/Samples';
+import Footer from '@/src/app/ui/organisms/Footer';
 
 export default function Main() {
   return (
@@ -16,6 +17,7 @@ export default function Main() {
       <Process />
       <Samples />
       <Contact />
+      <Footer />
     </div>
   );
 }

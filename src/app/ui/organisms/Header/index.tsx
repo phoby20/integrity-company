@@ -1,6 +1,6 @@
 'use client'
 
-import styles from '@/src/app/ui/organisms/Header/page.module.scss'
+import styles from '@/src/app/ui/organisms/Header/index.module.scss'
 import { Boogaloo } from 'next/font/google'
 
 const boogaloo = Boogaloo({
