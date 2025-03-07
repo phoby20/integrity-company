@@ -5,6 +5,7 @@ import MainBanner from '@/src/app/pages/Main/MainBanner';
 import Services from '@/src/app/pages/Main/Services';
 import Contact from '@/src/app/pages/Main/Contact';
 import Process from '@/src/app/pages/Main/Process';
+import Samples from '@/src/app/pages/Main/Samples';
 
 export default function Main() {
   return (
@@ -13,6 +14,7 @@ export default function Main() {
       <MainBanner />
       <Services />
       <Process />
+      <Samples />
       <Contact />
     </div>
   );
