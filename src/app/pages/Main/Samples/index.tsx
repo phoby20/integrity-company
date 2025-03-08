@@ -16,7 +16,7 @@ export default function Samples() {
         <p>Template</p>
         <div className={styles.desc}>
           <p>制作を依頼したいテンプレートを選んで問い合わせてください</p>
-          <p>* 紹介ページは1ページ増えるごとに5000円が追加されます</p>
+          <p>* 紹介ページは1ページ増えるごとに10000円が追加されます</p>
           <p>* 仕様により制作金額が増えることがあります</p>
         </div>
       </div>
@@ -27,7 +27,8 @@ export default function Samples() {
           <div className={styles.overlay}></div>
           <div className={styles.template_name}>
             <p>01. 紹介サイト</p>
-            <p>5,000円〜</p>
+            <p>製作費: 10,000円〜</p>
+            <p>サーバー代: 500円</p>
           </div>
           <Button buttonName='詳細を見る' onClick={handleClickDetail} type='tertiary' />
         </Link>
@@ -36,7 +37,8 @@ export default function Samples() {
           <div className={styles.overlay}></div>
           <div className={styles.template_name}>
             <p>02. SNS</p>
-            <p>ご相談要</p>
+            <p>製作費: 相談要</p>
+            <p>サーバー代: 課金制</p>
           </div>
           <Button buttonName='詳細を見る' onClick={handleClickDetail} type='tertiary' />
         </Link>
@@ -45,7 +47,8 @@ export default function Samples() {
           <div className={styles.overlay}></div>
           <div className={styles.template_name}>
             <p>03. 検索システム</p>
-            <p>100,000円〜</p>
+            <p>製作費: 相談要</p>
+            <p>サーバー代: 相談要</p>
           </div>
           <Button buttonName='詳細を見る' onClick={handleClickDetail} type='tertiary' />
         </Link>
